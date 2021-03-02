@@ -13,4 +13,11 @@ router.post('/',async (req,res)=>{
     res.json(user);
     });
 
+router.put('/:userId',async (req,res)=>{
+        await User.update(req.body,{
+            where:{id:req.params.userId}
+        })
+        res.json(user);
+        });
+
 module.exports = router;
