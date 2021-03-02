@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "predev":"fuser -k 3000/tcp && echo 'Terminated' || echo 'Nothing was running on the PORT'"
+
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +15,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
     "sequelize": "^6.5.0"
   }
 }
