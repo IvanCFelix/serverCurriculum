@@ -6,7 +6,7 @@ require('./db')
 
 
 server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({ extended: true }));
+//server.use(bodyParser.urlencoded({ extended: true }));
 
 server.listen(3000, () => {
     console.log('Server Is running!')

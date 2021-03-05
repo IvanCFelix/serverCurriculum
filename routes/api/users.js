@@ -14,10 +14,10 @@ router.post('/',async (req,res)=>{
     });
 
 router.put('/:userId',async (req,res)=>{
-        await User.update(req.body,{
+        const user = await User.update(req.body,{
             where:{id:req.params.userId}
         })
-        res.json(user);
+        res.status(200).send("Datos actualizados");
         });
 
 module.exports = router;
