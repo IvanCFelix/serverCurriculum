@@ -13,7 +13,7 @@ module.exports= (sequelize,type)=>{
             type: type.STRING
           },
           description:{
-            type: type.STRING
+            type: type.TEXT
           },
           email:{
             type: type.STRING
@@ -40,19 +40,19 @@ module.exports= (sequelize,type)=>{
             type: type.STRING
           },
           arrayWorks:{
-            type: type.STRING
+            type: type.TEXT
           },
           arraySchools:{
-            type: type.STRING
+            type: type.TEXT
           },
-          arraySoft:{
-            type: type.STRING
+          arraySofts:{
+            type: type.TEXT
           },
           arraySkills:{
-            type: type.STRING
+            type: type.TEXT
           },
           imgProfile:{
-            type: type.STRING
+            type: type.TEXT('long')
           }
     });
 }   

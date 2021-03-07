@@ -5,6 +5,7 @@ const {User} = require('../../db')
 
 router.get('/',async (req,res)=>{
 const users = await User.findAll();
+res.setHeader('Access-Control-Allow-Origin', '*');
 res.json(users);
 });
 
@@ -17,7 +18,7 @@ router.put('/:userId',async (req,res)=>{
         const user = await User.update(req.body,{
             where:{id:req.params.userId}
         })
-        res.status(200).send("Datos actualizados");
+        res.json(user);
         });
 
 module.exports = router;
