@@ -8,7 +8,7 @@ const schoolModel = require('./models/schools')
 const database =  'heroku_9394539ca97371e';
 const hostDB = 'us-cdbr-east-03.cleardb.com';
 const userDB = 'b7850a792f1d44';
-const passwordDB = 'c6103c5f' ;
+const passwordDB = 'c6103c5f' 
 const sequelize = new Sequelize(database, userDB, passwordDB, {
     host: hostDB,
     dialect: 'mysql',
