@@ -10,7 +10,7 @@ require('./db')
 server.use(cors());
 server.use(express.json({limit: '50mb'}));
 server.use(express.urlencoded({limit:'50mb'}))
-server.listen(3000, () => {
+server.listen( process.env.PORT ||3000, () => {
     console.log('Server Is running!')
 })
 server.use('/api',apiRouter);
