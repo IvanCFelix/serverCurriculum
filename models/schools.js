@@ -10,7 +10,7 @@ module.exports= (sequelize,type)=>{
             
           },
           description: {
-            type: type.STRING
+            type: type.TEXT('medium')
           },
           title: {
             type: type.STRING

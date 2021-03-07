@@ -12,7 +12,7 @@ module.exports= (sequelize,type)=>{
             type: type.STRING
           },
           jobDescription: {
-            type: type.STRING
+            type: type.TEXT('medium')
           }
     });
 }   

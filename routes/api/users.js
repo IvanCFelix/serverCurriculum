@@ -21,4 +21,6 @@ router.put('/:userId',async (req,res)=>{
         res.json(user);
         });
 
+        
+
 module.exports = router;

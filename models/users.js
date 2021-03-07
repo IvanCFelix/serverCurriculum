@@ -13,7 +13,7 @@ module.exports= (sequelize,type)=>{
             type: type.STRING
           },
           description:{
-            type: type.TEXT
+            type: type.TEXT('medium')
           },
           email:{
             type: type.STRING
