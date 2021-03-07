@@ -39,18 +39,6 @@ module.exports= (sequelize,type)=>{
           github:{
             type: type.STRING
           },
-          arrayWorks:{
-            type: type.TEXT
-          },
-          arraySchools:{
-            type: type.TEXT
-          },
-          arraySofts:{
-            type: type.TEXT
-          },
-          arraySkills:{
-            type: type.TEXT
-          },
           imgProfile:{
             type: type.TEXT('long')
           }
